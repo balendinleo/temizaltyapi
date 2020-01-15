@@ -1,4 +1,4 @@
-BIBIGGZ ALTYAPI
+BIGGZ ALTYAPI
 =================
 Oynuyor - events/ready.js
 
