@@ -1,6 +1,5 @@
-BIGGZ ALTYAPI
+BIBIGGZ ALTYAPI
 =================
-
 Oynuyor - events/ready.js
 
 Komutlar - komutlar/komutadı.js
