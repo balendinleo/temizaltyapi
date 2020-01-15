@@ -1,5 +1,5 @@
 {
-  "prefix": "PREFIXINIZI GİRİN",
-  "sahip": ["SAHIP1ID","SAHIP2ID"],
-  "token": "TOKENINIZI GİRİN"
+  "prefix": "PREFİX",
+  "sahip": ["SAHIP1","SAHIP2"],
+  "token": "TOKEN"
 }
