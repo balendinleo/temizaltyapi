@@ -11,4 +11,4 @@ Modül Ekle/Sil - package.json
 CODARE SUNUCUSUNA KATIL
 =================
 
-[CODARE SINIRSIZ DAVET LİNKİ](https://discord.gg/MeC8c3p)
+[CODARE SINIRSIZ DAVET LİNKİ]()
