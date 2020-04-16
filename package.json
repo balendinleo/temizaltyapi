@@ -73,6 +73,8 @@
     "ytdl-core": "^2.1.0",
     "child-process": "^1.0.2",
     "child_process": "^1.0.2",
-    "snekfetch": "^4.0.4"
+    "snekfetch": "^4.0.4",
+    "tr-date": "^2.1.1",
+    "map-o": "^2.0.9"
   }
 }
