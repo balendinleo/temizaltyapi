@@ -1,11 +1,13 @@
-const ayarlar = require('../ayarlar.json');
+const ayarlar = require("../ayarlar.json");
 module.exports = async message => {
   let client = message.client;
-  let prefix = await require('quick.db').fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
+  let prefix =
+    (await require("quick.db").fetch(`prefix_${message.guild.id}`)) ||
+    ayarlar.prefix;
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
-  let command = message.content.split(' ')[0].slice(prefix.length);
-  let params = message.content.split(' ').slice(1);
+  let command = message.content.split(" ")[0].slice(prefix.length);
+  let params = message.content.split(" ").slice(1);
   let perms = client.elevation(message);
   let cmd;
   if (client.commands.has(command)) {
@@ -17,5 +19,4 @@ module.exports = async message => {
     if (perms < cmd.conf.permLevel) return;
     cmd.run(client, message, params, perms);
   }
-
 };
