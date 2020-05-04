@@ -17,7 +17,7 @@ dependencies:
   enmap: 5.2.4
   express: 4.17.1
   ffmpeg-binaries: 4.0.0
-  figlet: 1.3.0
+  figlet: 1.4.0
   fs: 0.0.2
   generate-password: 1.5.1
   gifencoder: 2.0.1
@@ -28,9 +28,10 @@ dependencies:
   isgd: 1.1.3
   jimp: 0.10.3
   math-expression-evaluator: 1.2.22
-  moment: 2.24.0
+  moment: 2.25.3
   moment-duration-format: 2.3.2
   moment-timezone: 0.5.28
+  node-fetch: 2.6.0
   node-google-translate-skidz: 1.1.2
   node-opus: 0.3.3
   node-superfetch: 0.1.10
@@ -42,7 +43,7 @@ dependencies:
   simple-youtube-api: 5.2.1
   snekfetch: 4.0.4
   soi: 1.7.5
-  sqlite3: 4.1.1
+  sqlite3: 4.2.0
   steam-provider: 0.2.0
   string: 3.3.3
   superagent: 5.2.2
@@ -51,7 +52,7 @@ dependencies:
   weather-js: 2.0.0
   websocket: 1.0.31
   xmlhttprequest: 1.8.0
-  ytdl-core: 2.1.0
+  ytdl-core: 2.1.1
 packages:
   /@babel/runtime/7.9.2:
     dependencies:
@@ -2079,12 +2080,12 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-a4ceKPIB51x7pHEK3BEOoCMgOUOm51MKi8UEOocfDOpN9aHgtTEDGo8SgLRhrRVllNnpNmW9AjkXeySvmeoU1w==
-  /figlet/1.3.0:
+  /figlet/1.4.0:
     dev: false
     engines:
       node: '>= 0.4.0'
     resolution:
-      integrity: sha512-f7A8aOJAfyehLJ7lQ6rEA8WJw7kOk3lfWRi5piSjkzbK5YkI5sqO8eiLHz1ehO+DM0QYB85i8VfA6XIGUbU1dg==
+      integrity: sha512-CxxIjEKHlqGosgXaIA+sikGDdV6KZOOlzPJnYuPgQlOSHZP5h9WIghYI30fyXnwEVeSH7Hedy72gC6zJrFC+SQ==
   /file-type/3.9.0:
     dev: false
     engines:
@@ -2967,6 +2968,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
+  /moment/2.25.3:
+    dev: false
+    resolution:
+      integrity: sha512-PuYv0PHxZvzc15Sp8ybUCoQ+xpyPWvjOuK72a5ovzp2LI32rJXOiIfyoFoYvG3s6EwwrdkMyWuRiEHSZRLJNdg==
   /ms/2.0.0:
     dev: false
     resolution:
@@ -2983,6 +2988,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-INOFj37C7k3AfaNTtX8RhsTw7qRy7eLET14cROi9+5HAVbbHuIWUHEauBv5qT4Av2tWasiTY1Jw6puUNqRJXQg==
+  /nan/2.14.1:
+    dev: false
+    resolution:
+      integrity: sha512-isWHgVjnFjh2x2yuJ/tj3JbwoHu3UC2dX5G/88Cm24yB6YopVgxvBObDY7n5xW6ExmFhJpSEQqFPvq9zaXc8Jw==
   /napi-build-utils/1.0.2:
     dev: false
     resolution:
@@ -3052,7 +3061,8 @@ packages:
     dependencies:
       bindings: 1.2.1
       commander: 2.20.3
-      nan: 2.14.0
+      nan: 2.14.1
+    deprecated: This project is unmaintained. See @discordjs/opus for an alternative.
     dev: false
     engines:
       node: '>=5.10.0'
@@ -3649,7 +3659,7 @@ packages:
     dependencies:
       bindings: 1.5.0
       debug: 2.6.9
-      nan: 2.14.0
+      nan: 2.14.1
     dev: false
     optional: true
     requiresBuild: true
@@ -4074,6 +4084,14 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-CvT5XY+MWnn0HkbwVKJAyWEMfzpAPwnTiB3TobA5Mri44SrTovmmh499NPQP+gatkeOipqPlBLel7rn4E/PCQg==
+  /sqlite3/4.2.0:
+    dependencies:
+      nan: 2.14.1
+      node-pre-gyp: 0.11.0
+    dev: false
+    requiresBuild: true
+    resolution:
+      integrity: sha512-roEOz41hxui2Q7uYnWsjMOTry6TcNUNmp8audCx18gF10P2NknwdpF+E+HKvz/F2NvPKGGBF4NGc+ZPQ+AABwg==
   /sshpk/1.16.1:
     dependencies:
       asn1: 0.2.4
@@ -4645,7 +4663,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-x+sXyT4RLLEIb6bY5R+wZnt5pfk=
-  /ytdl-core/2.1.0:
+  /ytdl-core/2.1.1:
     dependencies:
       html-entities: 1.3.1
       m3u8stream: 0.6.5
@@ -4655,7 +4673,7 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-UmblkTLSV0v3y9I3oqrZkllyT0FnK1Owm7WftEkcTIlqnjip1mnyaLICz0P6+W3Ji/AtBFSwy/mLG2dlEvP6Vw==
+      integrity: sha512-rg1h6enMeBzShy4ZMam8k28VQfpSdxwZprCy3t38VvHn9DHzYqVk5Lvevy4QGkASScoYr1sIKGkNo0hh7NGRnA==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
@@ -4678,7 +4696,7 @@ specifiers:
   enmap: ^5.2.4
   express: ^4.17.1
   ffmpeg-binaries: ^4.0.0
-  figlet: ^1.3.0
+  figlet: ^1.4.0
   fs: ^0.0.2
   generate-password: ^1.5.0
   gifencoder: ^2.0.1
@@ -4689,11 +4707,12 @@ specifiers:
   isgd: ^1.1.3
   jimp: ^0.10.3
   math-expression-evaluator: ^1.2.22
-  moment: ^2.24.0
+  moment: ^2.25.3
   moment-duration-format: ^2.2.2
   moment-timezone: ^0.5.27
+  node-fetch: ^2.6.0
   node-google-translate-skidz: ^1.1.2
-  node-opus: ^0.3.2
+  node-opus: ^0.3.3
   node-superfetch: ^0.1.10
   opusscript: ^0.0.7
   os: ^0.1.1
@@ -4703,7 +4722,7 @@ specifiers:
   simple-youtube-api: ^5.2.1
   snekfetch: ^4.0.4
   soi: ^1.7.5
-  sqlite3: ^4.1.1
+  sqlite3: ^4.2.0
   steam-provider: ^0.2.0
   string: ^3.3.3
   superagent: ^5.2.2
@@ -4712,4 +4731,4 @@ specifiers:
   weather-js: ^2.0.0
   websocket: ^1.0.30
   xmlhttprequest: ^1.8.0
-  ytdl-core: ^2.1.0
+  ytdl-core: ^2.1.1
